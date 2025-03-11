@@ -3,15 +3,970 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind CSS</title>
+    <title>Project Test</title>
+    <link rel="stylesheet" href="style.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
-  <body class="flex items-center justify-center h-screen bg-gray-100">
-    <div>
-        Project test
+  <body class="bg-[#191919]">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="relative bg-background text-white">
+            <img
+              src="assets/images/Banner1.png"
+              alt="Go-Karts"
+              class="w-full h-auto object-cover"
+            />
+            <div
+              class="absolute top-[24px] flex items-center justify-between w-full 2xl:px-[46px] px-[16px]"
+            >
+              <div>
+                <img
+                  src="assets/logo/logo-header.png"
+                  alt="logo"
+                  class="!2xl:w-[125px] !2xl:h-[40px] !w-[85px] !h-[30px] object-cover"
+                />
+              </div>
+              <div class="flex items-center">
+                <img
+                  src="assets/icons/language.png"
+                  alt="logo"
+                  class="w-[125px] h-[40px] object-cover mr-[32px] cursor-pointer"
+                />
+                <img
+                  src="assets/icons/menu.png"
+                  alt="logo"
+                  class="w-[125px] h-[40px] object-cover cursor-pointer"
+                />
+              </div>
+            </div>
+            <div
+              class="absolute 2xl:bottom-[190px] bottom-[90px] 2xl:pl-[48px] pl-[16px] w-[580px]"
+            >
+              <h1
+                class="2xl:text-[120px] text-[28px] font-bold big-stencil-shoulders"
+              >
+                GO-KARTS
+              </h1>
+              <div class="flex item-center justify-between">
+                <p
+                  class="2xl:mt-[24px] 2xl:text-[14px] text-[8px] 2xl:mr-[12px ]"
+                >
+                  Enjoy an adrenaline ride in any weather. Outdoor <br />
+                  track and indoor hall at a professional level with <br />
+                  Sodi go-karts.
+                </p>
+                <div class="mt-6 2xl:block hidden">
+                  <a href="#" class="custom-button text-[16px]"
+                    >Find out more</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="justify-center flex items-center relative w-full 2xl:pr-20 pr-12 2xl:bottom-28 bottom-0"
+            >
+              <div class="mt-4 z-10">
+                <a href="#" class="custom-reserve 2xl:text-[32px] text-[16px]"
+                  ><span class="big-shoulders">RESERVE</span></a
+                >
+              </div>
+              <div class="mt-4 absolute left-1/2">
+                <a href="#" class="custom-now 2xl:text-[32px] text-[16px]"
+                  ><span class="big-shoulders">NOW!</span></a
+                >
+              </div>
+            </div>
+            <div
+              class="absolute right-0 bottom-[50px] w-[580px] 2xl:block hidden"
+            >
+              <div class="relative w-[580px] right-0 bottom-[126px]">
+                <img
+                  src="assets/images/mask-group.png"
+                  alt="Go-Karts"
+                  class="!w-[70%] h-auto object-cover opacity-85"
+                />
+                <img
+                  src="assets/images/flag.png"
+                  alt="Go-Karts"
+                  class="!w-[100px] !h-[100px] object-cover absolute top-[-35px] left-[-20px]"
+                />
+                <div class="absolute top-[8px] left-[87px]">
+                  <p class="text-[32px] font-normal top-0 big-shoulders">
+                    EVERYDAY FUN FOR EVERYONE
+                  </p>
+                </div>
+                <div
+                  class="absolute top-[58px] left-[14px] w-full h-full text-white"
+                >
+                  <p class="text-[14px]">
+                    A few kilometers from Cheb, we have built a new<br />
+                    entertainment centre
+                    <span class="gradient-text">FUN Arena Cheb</span> for you.
+                    You<br />
+                    will find entertainment and sports activities for<br />
+                    children and adults here.
+                  </p>
+                </div>
+                <button
+                  class="absolute bottom-[-20px] right-[173px] border rounded-full bg-[#D9D9D9] px-[8px] py-[9px] w-[190px] h-[38px] flex justify-between items-center"
+                >
+                  <span class="text-[#292929] font-lexend-deca font-bold">
+                    +420737878891
+                  </span>
+                  <img
+                    src="assets/icons/phone.png"
+                    alt="phone"
+                    class="!w-[30px] !h-[30px] object-cover"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="relative bg-background text-white">
+            <img
+              src="assets/images/Banner2.png"
+              alt="Go-Karts"
+              class="w-full h-auto object-cover"
+            />
+            <div
+              class="absolute top-[24px] flex items-center justify-between w-full 2xl:px-[46px] px-[16px]"
+            >
+              <div>
+                <img
+                  src="assets/logo/logo-header.png"
+                  alt="logo"
+                  class="!2xl:w-[125px] !2xl:h-[40px] !w-[85px] !h-[30px] object-cover"
+                />
+              </div>
+              <div class="flex items-center">
+                <img
+                  src="assets/icons/language.png"
+                  alt="logo"
+                  class="w-[125px] h-[40px] object-cover mr-[32px] cursor-pointer"
+                />
+                <img
+                  src="assets/icons/menu.png"
+                  alt="logo"
+                  class="w-[125px] h-[40px] object-cover cursor-pointer"
+                />
+              </div>
+            </div>
+            <div
+              class="absolute 2xl:bottom-[190px] bottom-[90px] 2xl:pl-[48px] pl-[16px] w-[580px]"
+            >
+              <h1
+                class="2xl:text-[120px] text-[28px] font-bold big-stencil-shoulders"
+              >
+                JUMPARENA
+              </h1>
+              <div class="flex item-center justify-between">
+                <p
+                  class="2xl:mt-[24px] 2xl:text-[14px] text-[8px] 2xl:mr-[12px ]"
+                >
+                  Aréna se spoustou atrakcí pro děti i dospělé všech<br />
+                  věkových kategorií. Trampolíny, lezecká stěna, ninja<br />
+                  dráha a další atrakce.
+                </p>
+                <div class="mt-6 2xl:block hidden">
+                  <a href="#" class="custom-button text-[16px]"
+                    >Find out more</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="justify-center flex items-center relative w-full 2xl:pr-20 pr-12 2xl:bottom-28 bottom-0"
+            >
+              <div class="mt-4 z-10">
+                <a href="#" class="custom-reserve 2xl:text-[32px] text-[16px]"
+                  ><span class="big-shoulders">RESERVE</span></a
+                >
+              </div>
+              <div class="mt-4 absolute left-1/2">
+                <a href="#" class="custom-now 2xl:text-[32px] text-[16px]"
+                  ><span class="big-shoulders">NOW!</span></a
+                >
+              </div>
+            </div>
+            <div
+              class="absolute right-0 bottom-[50px] w-[580px] 2xl:block hidden"
+            >
+              <div class="relative w-[580px] right-0 bottom-[126px]">
+                <img
+                  src="assets/images/mask-group.png"
+                  alt="Go-Karts"
+                  class="!w-[70%] h-auto object-cover opacity-85"
+                />
+                <img
+                  src="assets/images/flag.png"
+                  alt="Go-Karts"
+                  class="!w-[100px] !h-[100px] object-cover absolute top-[-35px] left-[-20px]"
+                />
+                <div class="absolute top-[8px] left-[87px]">
+                  <p class="text-[32px] font-normal top-0 big-shoulders">
+                    EVERYDAY FUN FOR EVERYONE
+                  </p>
+                </div>
+                <div
+                  class="absolute top-[58px] left-[14px] w-full h-full text-white"
+                >
+                  <p class="text-[14px]">
+                    A few kilometers from Cheb, we have built a new<br />
+                    entertainment centre
+                    <span class="gradient-text">FUN Arena Cheb</span> for you.
+                    You<br />
+                    will find entertainment and sports activities for<br />
+                    children and adults here.
+                  </p>
+                </div>
+                <button
+                  class="absolute bottom-[-20px] right-[173px] border rounded-full bg-[#D9D9D9] px-[8px] py-[9px] w-[190px] h-[38px] flex justify-between items-center"
+                >
+                  <span class="text-[#292929] font-lexend-deca font-bold">
+                    +420737878891
+                  </span>
+                  <img
+                    src="assets/icons/phone.png"
+                    alt="phone"
+                    class="!w-[30px] !h-[30px] object-cover"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="relative bg-background text-white">
+            <img
+              src="assets/images/Banner3.png"
+              alt="Go-Karts"
+              class="w-full h-auto object-cover"
+            />
+            <div
+              class="absolute top-[24px] flex items-center justify-between w-full 2xl:px-[46px] px-[16px]"
+            >
+              <div>
+                <img
+                  src="assets/logo/logo-header.png"
+                  alt="logo"
+                  class="!2xl:w-[125px] !2xl:h-[40px] !w-[85px] !h-[30px] object-cover"
+                />
+              </div>
+              <div class="flex items-center">
+                <img
+                  src="assets/icons/language.png"
+                  alt="logo"
+                  class="w-[125px] h-[40px] object-cover mr-[32px] cursor-pointer"
+                />
+                <img
+                  src="assets/icons/menu.png"
+                  alt="logo"
+                  class="w-[125px] h-[40px] object-cover cursor-pointer"
+                />
+              </div>
+            </div>
+            <div
+              class="absolute 2xl:bottom-[190px] bottom-[90px] 2xl:pl-[48px] pl-[16px] w-[580px]"
+            >
+              <h1
+                class="2xl:text-[120px] text-[28px] font-bold big-stencil-shoulders uppercase"
+              >
+                Virtuální realita
+              </h1>
+              <div class="flex item-center justify-between">
+                <p
+                  class="2xl:mt-[24px] 2xl:text-[14px] text-[8px] 2xl:mr-[12px ]"
+                >
+                  Díky naší virtuální realitě vstoupíte do jiného světa<br />
+                  a poznáte nové technologie. Vyberte si z naší<br />
+                  nabídky her a zažijte VR na vlastní kůži.
+                </p>
+                <div class="mt-6 2xl:block hidden">
+                  <a href="#" class="custom-button text-[16px]"
+                    >Find out more</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="justify-center flex items-center relative w-full 2xl:pr-20 pr-12 2xl:bottom-28 bottom-0"
+            >
+              <div class="mt-4 z-10">
+                <a href="#" class="custom-reserve 2xl:text-[32px] text-[16px]"
+                  ><span class="big-shoulders">RESERVE</span></a
+                >
+              </div>
+              <div class="mt-4 absolute left-1/2">
+                <a href="#" class="custom-now 2xl:text-[32px] text-[16px]"
+                  ><span class="big-shoulders">NOW!</span></a
+                >
+              </div>
+            </div>
+            <div
+              class="absolute right-0 bottom-[50px] w-[580px] 2xl:block hidden"
+            >
+              <div class="relative w-[580px] right-0 bottom-[126px]">
+                <img
+                  src="assets/images/mask-group.png"
+                  alt="Go-Karts"
+                  class="!w-[70%] h-auto object-cover opacity-85"
+                />
+                <img
+                  src="assets/images/flag.png"
+                  alt="Go-Karts"
+                  class="!w-[100px] !h-[100px] object-cover absolute top-[-35px] left-[-20px]"
+                />
+                <div class="absolute top-[8px] left-[87px]">
+                  <p class="text-[32px] font-normal top-0 big-shoulders">
+                    EVERYDAY FUN FOR EVERYONE
+                  </p>
+                </div>
+                <div
+                  class="absolute top-[58px] left-[14px] w-full h-full text-white"
+                >
+                  <p class="text-[14px]">
+                    A few kilometers from Cheb, we have built a new<br />
+                    entertainment centre
+                    <span class="gradient-text">FUN Arena Cheb</span> for you.
+                    You<br />
+                    will find entertainment and sports activities for<br />
+                    children and adults here.
+                  </p>
+                </div>
+                <button
+                  class="absolute bottom-[-20px] right-[173px] border rounded-full bg-[#D9D9D9] px-[8px] py-[9px] w-[190px] h-[38px] flex justify-between items-center"
+                >
+                  <span class="text-[#292929] font-lexend-deca font-bold">
+                    +420737878891
+                  </span>
+                  <img
+                    src="assets/icons/phone.png"
+                    alt="phone"
+                    class="!w-[30px] !h-[30px] object-cover"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="relative bg-background text-white">
+            <img
+              src="assets/images/Banner4.png"
+              alt="Go-Karts"
+              class="w-full h-auto object-cover"
+            />
+            <div
+              class="absolute top-[24px] flex items-center justify-between w-full 2xl:px-[46px] px-[16px]"
+            >
+              <div>
+                <img
+                  src="assets/logo/logo-header.png"
+                  alt="logo"
+                  class="!2xl:w-[125px] !2xl:h-[40px] !w-[85px] !h-[30px] object-cover"
+                />
+              </div>
+              <div class="flex items-center">
+                <img
+                  src="assets/icons/language.png"
+                  alt="logo"
+                  class="w-[125px] h-[40px] object-cover mr-[32px] cursor-pointer"
+                />
+                <img
+                  src="assets/icons/menu.png"
+                  alt="logo"
+                  class="w-[125px] h-[40px] object-cover cursor-pointer"
+                />
+              </div>
+            </div>
+            <div
+              class="absolute 2xl:bottom-[190px] bottom-[90px] 2xl:pl-[48px] pl-[16px] w-[580px]"
+            >
+              <h1
+                class="2xl:text-[120px] text-[28px] font-bold big-stencil-shoulders"
+              >
+                MULTIBALL
+              </h1>
+              <div class="flex item-center justify-between">
+                <p
+                  class="2xl:mt-[24px] 2xl:text-[14px] text-[8px] 2xl:mr-[12px ]"
+                >
+                  Interaktivní sportovní a herní konzole, která z<br />
+                  pohybu a vzdělávání dělá opravdovou zábavu. Velké<br />
+                  množství her zaujme všechny věkové kategorie.
+                </p>
+                <div class="mt-6 2xl:block hidden">
+                  <a href="#" class="custom-button text-[16px]"
+                    >Find out more</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="justify-center flex items-center relative w-full 2xl:pr-20 pr-12 2xl:bottom-28 bottom-0"
+            >
+              <div class="mt-4 z-10">
+                <a href="#" class="custom-reserve 2xl:text-[32px] text-[16px]"
+                  ><span class="big-shoulders">RESERVE</span></a
+                >
+              </div>
+              <div class="mt-4 absolute left-1/2">
+                <a href="#" class="custom-now 2xl:text-[32px] text-[16px]"
+                  ><span class="big-shoulders">NOW!</span></a
+                >
+              </div>
+            </div>
+            <div
+              class="absolute right-0 bottom-[50px] w-[580px] 2xl:block hidden"
+            >
+              <div class="relative w-[580px] right-0 bottom-[126px]">
+                <img
+                  src="assets/images/mask-group.png"
+                  alt="Go-Karts"
+                  class="!w-[70%] h-auto object-cover opacity-85"
+                />
+                <img
+                  src="assets/images/flag.png"
+                  alt="Go-Karts"
+                  class="!w-[100px] !h-[100px] object-cover absolute top-[-35px] left-[-20px]"
+                />
+                <div class="absolute top-[8px] left-[87px]">
+                  <p class="text-[32px] font-normal top-0 big-shoulders">
+                    EVERYDAY FUN FOR EVERYONE
+                  </p>
+                </div>
+                <div
+                  class="absolute top-[58px] left-[14px] w-full h-full text-white"
+                >
+                  <p class="text-[14px]">
+                    A few kilometers from Cheb, we have built a new<br />
+                    entertainment centre
+                    <span class="gradient-text">FUN Arena Cheb</span> for you.
+                    You<br />
+                    will find entertainment and sports activities for<br />
+                    children and adults here.
+                  </p>
+                </div>
+                <button
+                  class="absolute bottom-[-20px] right-[173px] border rounded-full bg-[#D9D9D9] px-[8px] py-[9px] w-[190px] h-[38px] flex justify-between items-center"
+                >
+                  <span class="text-[#292929] font-lexend-deca font-bold">
+                    +420737878891
+                  </span>
+                  <img
+                    src="assets/icons/phone.png"
+                    alt="phone"
+                    class="!w-[30px] !h-[30px] object-cover"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="relative bg-background text-white">
+            <img
+              src="assets/images/Banner5.png"
+              alt="Go-Karts"
+              class="w-full h-auto object-cover"
+            />
+            <div
+              class="absolute top-[24px] flex items-center justify-between w-full 2xl:px-[46px] px-[16px]"
+            >
+              <div>
+                <img
+                  src="assets/logo/logo-header.png"
+                  alt="logo"
+                  class="!2xl:w-[125px] !2xl:h-[40px] !w-[85px] !h-[30px] object-cover"
+                />
+              </div>
+              <div class="flex items-center">
+                <img
+                  src="assets/icons/language.png"
+                  alt="logo"
+                  class="w-[125px] h-[40px] object-cover mr-[32px] cursor-pointer"
+                />
+                <img
+                  src="assets/icons/menu.png"
+                  alt="logo"
+                  class="w-[125px] h-[40px] object-cover cursor-pointer"
+                />
+              </div>
+            </div>
+            <div
+              class="absolute 2xl:bottom-[190px] bottom-[90px] 2xl:pl-[48px] pl-[16px] w-[580px]"
+            >
+              <h1
+                class="2xl:text-[120px] text-[28px] font-bold big-stencil-shoulders uppercase"
+              >
+                Laserová střelnice
+              </h1>
+              <div class="flex item-center justify-between">
+                <p
+                  class="2xl:mt-[24px] 2xl:text-[14px] text-[8px] 2xl:mr-[12px ]"
+                >
+                  Vyzkoušejte si nebo vypilujte svou mušku!<br />
+                  Laserová střelnice se třemi režimy střelby na čas<br />
+                  otestuje nejen vaši přesnost, ale také rychlost a<br />
+                  postřeh.
+                </p>
+                <div class="mt-6 2xl:block hidden">
+                  <a href="#" class="custom-button text-[16px]"
+                    >Find out more</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="justify-center flex items-center relative w-full 2xl:pr-20 pr-12 2xl:bottom-28 bottom-0"
+            >
+              <div class="mt-4 z-10">
+                <a href="#" class="custom-reserve 2xl:text-[32px] text-[16px]"
+                  ><span class="big-shoulders">RESERVE</span></a
+                >
+              </div>
+              <div class="mt-4 absolute left-1/2">
+                <a href="#" class="custom-now 2xl:text-[32px] text-[16px]"
+                  ><span class="big-shoulders">NOW!</span></a
+                >
+              </div>
+            </div>
+            <div
+              class="absolute right-0 bottom-[50px] w-[580px] 2xl:block hidden"
+            >
+              <div class="relative w-[580px] right-0 bottom-[126px]">
+                <img
+                  src="assets/images/mask-group.png"
+                  alt="Go-Karts"
+                  class="!w-[70%] h-auto object-cover opacity-85"
+                />
+                <img
+                  src="assets/images/flag.png"
+                  alt="Go-Karts"
+                  class="!w-[100px] !h-[100px] object-cover absolute top-[-35px] left-[-20px]"
+                />
+                <div class="absolute top-[8px] left-[87px]">
+                  <p class="text-[32px] font-normal top-0 big-shoulders">
+                    EVERYDAY FUN FOR EVERYONE
+                  </p>
+                </div>
+                <div
+                  class="absolute top-[58px] left-[14px] w-full h-full text-white"
+                >
+                  <p class="text-[14px]">
+                    A few kilometers from Cheb, we have built a new<br />
+                    entertainment centre
+                    <span class="gradient-text">FUN Arena Cheb</span> for you.
+                    You<br />
+                    will find entertainment and sports activities for<br />
+                    children and adults here.
+                  </p>
+                </div>
+                <button
+                  class="absolute bottom-[-20px] right-[173px] border rounded-full bg-[#D9D9D9] px-[8px] py-[9px] w-[190px] h-[38px] flex justify-between items-center"
+                >
+                  <span class="text-[#292929] font-lexend-deca font-bold">
+                    +420737878891
+                  </span>
+                  <img
+                    src="assets/icons/phone.png"
+                    alt="phone"
+                    class="!w-[30px] !h-[30px] object-cover"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
+
+    <div
+      class="2xl:px-[320px] 2xl:flex items-stretch 2xl:mt-32 mt-12 h-full w-full relative"
+    >
+      <div class="2xl:w-1/2 2xl:px-0 px-4 mr-5 fadeInLeft flex flex-col">
+        <div class="big-shoulders text-[72px] text-[#D9D9D9]">REGISTRATION</div>
+        <div class="space text-[16px] text-[#D9D9D9] mt-[32px]">
+          For organizational and security reasons, every visitor to the FUN
+          arena Cheb must register before entering the attraction. At the
+          reception, your registration will be completed and you will receive a
+          loyalty card which you will use for our services.
+        </div>
+      </div>
+      <div
+        class="2xl:w-1/2 2xl:px-0 px-4 ml-5 fadeInLeft flex flex-col 2xl:mt-0 mt-8"
+      >
+        <div class="flex items-end">
+          <div class="custom-number !bg-black">
+            <span class="text-[72px] font-bold text-[#009FE3]">1</span>
+          </div>
+          <div class="custom-title !bg-black ml-4">
+            <span class="text-[24px] font-bold text-[#D9D9D9] ml-8"
+              >Choose an Attraction</span
+            >
+          </div>
+        </div>
+        <div class="text-[16px] text-[#D9D9D9] ml-28 mt-4">
+          Choose from the attractions of the FUN arena.
+        </div>
+
+        <div class="flex items-end mt-[96px] relative">
+          <div class="custom-number !bg-black">
+            <span class="text-[72px] font-bold text-[#009FE3]">2</span>
+          </div>
+          <div class="custom-title !bg-black ml-4">
+            <span class="text-[24px] font-bold text-[#D9D9D9] ml-8"
+              >Register</span
+            >
+          </div>
+          <div class="absolute right-8 top-4 2xl:flex hidden">
+            <span
+              class="bg-[#E30613] h-[26px] mr-6 rounded-lg px-[10px] py-[4px] text-white text-[14px] font-bold"
+              >Click here</span
+            >
+            <img
+              src="assets/images/qr.png"
+              alt="Go-Karts"
+              class="w-[128px] h-[128px] object-cover"
+            />
+          </div>
+        </div>
+        <div
+          class="flex 2xl:absolute 2xl:right-8 2xl:top-4 block 2xl:hidden mt-4"
+        >
+          <span
+            class="bg-[#E30613] h-[26px] mr-6 rounded-lg px-[10px] py-[4px] text-white text-[14px] font-bold"
+            >Click here</span
+          >
+          <img
+            src="assets/images/qr.png"
+            alt="Go-Karts"
+            class="w-[128px] h-[128px] object-cover"
+          />
+        </div>
+        <div class="text-[16px] text-[#D9D9D9] ml-28 mt-4">
+          You can register at the reception or by<br />
+          clicking the button above from the comfort of<br />
+          your home.
+        </div>
+
+        <div class="flex items-end mt-[96px]">
+          <div class="custom-number !bg-black">
+            <span class="text-[72px] font-bold text-[#009FE3]">3</span>
+          </div>
+          <div class="custom-title !bg-black ml-4">
+            <span class="text-[24px] font-bold text-[#D9D9D9] ml-8"
+              >Have Fun</span
+            >
+          </div>
+        </div>
+        <div class="text-[16px] text-[#D9D9D9] ml-28 mt-4 w-[60%]">
+          Thank you for your online registrations. For each purchase you get
+          points, which you can apply to our services and attractions then. We
+          look forward to you!
+        </div>
+      </div>
+      <img
+        src="assets/images/logo-left.png"
+        alt="Go-Karts"
+        class="w-[155px] h-[716px] object-cover absolute left-[270px] top-[250px] 2xl:block hidden"
+      />
+      <div
+        class="2xl:absolute 2xl:left-[555px] 2xl:bottom-[-350px] 2xl:mt-0 mt-6"
+      >
+        <div
+          class="big-shoulders 2xl:text-[72px] text-[32px] text-[#D9D9D9] 2l:pl-0 pl-[16px]"
+        >
+          NEW ENTERTAINMENT <br />
+          CENTRE NEAR CHEB
+        </div>
+      </div>
+      <div
+        class="2xl:absolute 2xl:bottom-[-420px] 2xl:left-[555px] text-[#D9D9D9] text-[16px] 2l:pl-0 pl-[16px] 2xl:mt-0 mt-2"
+      >
+        We have been entertaining children and adults<br />
+        in western Bohemia for more than 10 years!
+      </div>
+      <div
+        class="2xl:absolute 2xl:bottom-[-420px] 2xl:right-[320px] text-[#D9D9D9] text-[16px] flex items-center 2l:pl-0 pl-[16px] 2xl:mt-0 mt-2"
+      >
+        Find more about us
+        <img
+          src="assets/icons/arrow-right.png"
+          alt="Go-Karts"
+          class="w-[24px] h-[24px] object-cover ml-[12px]"
+        />
+      </div>
+    </div>
+
+    <div class="2xl:mt-[500px] 2xl:px-[320px] px-[16px] 2xl:mt-0 mt-4">
+      <div class="video-container" id="videoContainer">
+        <video id="video">
+          <source src="./assets/mp4/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay" id="overlay">
+          <div class="play-button"></div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="2xl:px-[320px] px-[16px] 2xl:flex 2xl:items-center justify-between 2xl:mt-[200px] mt-[80px]"
+    >
+      <span class="big-shoulders 2xl:text-[72px] text-[32px] text-[#D9D9D9]"
+        >OUR ATTRACTIONS</span
+      >
+      <div class="flex items-center">
+        <span class="text-[16px] text-[#D9D9D9] mr-[24px]">
+          Multiple activities at Fun Arena Cheb
+        </span>
+        <img
+          src="assets/icons/Frame47.png"
+          alt="Go-Karts"
+          class="w-[32px] h-[16px] object-cover"
+        />
+      </div>
+    </div>
+
+    <div
+      class="mt-[51px] 2xl:px-[320px] 2xl:flex 2xl:justify-between relative 2xl:h-[680px]"
+    >
+      <div class="flex-col flex mt-[40px] 2xl:absolute 2xl:left-[320px]">
+        <button
+          class="custom-acctractions"
+          style="--bg-image: url('assets/images/acttractions1.png')"
+        >
+          <span class="custom-text-acctractions">KARTARENA</span>
+        </button>
+
+        <button
+          class="custom-acctractions mt-[12px] active"
+          style="--bg-image: url('assets/images/acttractions2.png')"
+        >
+          <span class="custom-text-acctractions active">JUMPARENA</span>
+        </button>
+        <button
+          class="custom-acctractions mt-[12px]"
+          style="--bg-image: url('assets/images/acttractions3.png')"
+        >
+          <span class="custom-text-acctractions">VIRTUAL REALITY</span>
+        </button>
+        <button
+          class="custom-acctractions mt-[12px]"
+          style="--bg-image: url('assets/images/acttractions4.png')"
+        >
+          <span class="custom-text-acctractions">MULTIBALL</span>
+        </button>
+        <button
+          class="custom-acctractions mt-[12px]"
+          style="--bg-image: url('assets/images/acttractions5.png')"
+        >
+          <span class="custom-text-acctractions">LASER SHOOTING RANGE</span>
+        </button>
+        <button
+          class="custom-acctractions mt-[12px]"
+          style="--bg-image: url('assets/images/acttractions6.png')"
+        >
+          <span class="custom-text-acctractions">COMPANY EVENTS</span>
+        </button>
+      </div>
+      <div
+        class="2xl:absolute 2xl:right-[320px] 2xl:px-0 px-[16px] 2xl:mt-0 mt-4"
+      >
+        <div class="relative">
+          <img
+            src="assets/images/Shape1.png"
+            alt="logo"
+            class="2xl:w-[780px] 2xl:h-[518px] object-cover"
+          />
+          <div
+            class="absolute left-[33px] bottom-[24px] text-[16px] text-white"
+          >
+            Arena with lots of attractions for children and<br />
+            adults of all ages. Trampolines, climbing wall,<br />
+            ninja track and other attractions.
+          </div>
+          <button
+            class="absolute right-0 bottom-0 bg-[#D9D9D9] 2xl:text-[16px] text-[6px] text-[#292929] 2xl:px-[24px] 2xl:py-[10px] px-[12px] py-[5px] rounded-full font-bold"
+          >
+            Find out more
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="relative bg-[#E30613] rounded-lg 2xl:mx-[460px] mx-[16px] text-center 2xl:py-[24px] py-[12px] 2xl:mt-0 mt-20"
+    >
+      <img
+        src="assets/images/box.png"
+        alt="Go-Karts"
+        class="w-[220px] h-[220px] object-cover absolute left-4 top-[-60px] 2xl:block hidden"
+      />
+      <div class="2xl:text-[32px] text-[16px] text-white 2xl:ml-[160px]">
+        Make somebody happy with a gift voucher
+      </div>
+      <div class="2xl:text-[16px] text-[8px] text-white 2xl:ml-[160px]">
+        The voucher is valid for all services. Unforgettable experiences for
+        children and adults!
+      </div>
+      <button
+        class="2xl:mt-0 mt-4 2xl:absolute right-[-60px] 2xl:top-1/2 2xl:-translate-y-1/2 text-[#292929] 2xl:text-[16px] text-[8px] font-bold 2xl:px-[24px] 2xl:py-[12px] px-[12px] py-[6px] rounded-lg bg-white"
+      >
+        Buy now
+      </button>
+    </div>
+
+    <footer class="border-t border-[#292929] mt-[54px]">
+      <div class="w-full 2xl:flex 2xl:px-[320px] 2xl:py-[80px]">
+        <div class="2xl:w-1/3 2xl:px-0 px-4 fadeInLeft flex flex-col 2xl:block flex items-center">
+          <img
+            src="assets/images/logo-footer.png"
+            alt="Go-Karts"
+            class="w-[200px] h-[95px] object-cover"
+          />
+          <div
+            class="flex items-center px-[12px] py-[4px] bg-[#292929] rounded-full w-fit mt-[24px]"
+          >
+            <img
+              src="assets/icons/fb.png"
+              alt="Go-Karts"
+              class="w-[32px] h-[32px] object-cover mr-[12px] cursor-pointer"
+            />
+            <img
+              src="assets/icons/ig.png"
+              alt="Go-Karts"
+              class="w-[32px] h-[32px] object-cover mr-[12px] cursor-pointer"
+            />
+            <img
+              src="assets/icons/mail.png"
+              alt="Go-Karts"
+              class="w-[32px] h-[32px] object-cover mr-[12px] cursor-pointer"
+            />
+            <img
+              src="assets/icons/ic-phone.png"
+              alt="Go-Karts"
+              class="w-[32px] h-[32px] object-cover cursor-pointer"
+            />
+          </div>
+        </div>
+        <div
+          class="2xl:w-1/3 2xl:px-0 px-4 fadeInLeft flex flex-col text-[14px] text-white text-center 2xl:mt-0 mt-10"
+        >
+          New entertainment centre FUN arena Cheb. You will find entertainment
+          and sports activities for children and adults here.
+        </div>
+        <div
+          class="2xl:w-1/3 2xl:px-0 px-4 fadeInLeft flex flex-col 2xl:text-right 2xl:block flex items-center text-[14px] text-white 2xl:mt-0 mt-10"
+        >
+          <div class="mb-[10px]">Potočiště 3, 350 02 Odrava</div>
+          <div class="mb-[10px]">fun@funarenacheb.cz</div>
+          <div class="mb-[10px]">+420737878891</div>
+          <div class="flex mt-[24px] items-center flex 2xl:justify-end justify-between">
+            <span>© 2025 FUN Arena Cheb. All rights Reserved.</span>
+            <button
+              id="scrollTopBtn"
+              class="rounded-full w-[40px] h-[40px] bg-[#292929] ml-[48px] flex items-center justify-center"
+            >
+              <img
+                src="assets/icons/Vector.png"
+                alt="Go-Karts"
+                class="w-[12px] h-[6px] object-cover cursor-pointer"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const videoContainer = document.getElementById("videoContainer");
+      const video = document.getElementById("video");
+      const overlay = document.getElementById("overlay");
+
+      videoContainer.addEventListener("click", function () {
+        if (video.paused) {
+          video.play();
+          videoContainer.classList.add("playing");
+        } else {
+          video.pause();
+          videoContainer.classList.remove("playing");
+        }
+      });
+
+      video.addEventListener("ended", function () {
+        videoContainer.classList.remove("playing");
+      });
+    });
+
+    document.querySelectorAll(".custom-acctractions").forEach((button) => {
+      button.addEventListener("click", function () {
+        document.querySelectorAll(".custom-acctractions").forEach((btn) => {
+          btn.classList.remove("active");
+          btn
+            .querySelector(".custom-text-acctractions")
+            .classList.remove("active");
+        });
+        this.classList.add("active");
+        this.querySelector(".custom-text-acctractions").classList.add("active");
+      });
+    });
+
+    document
+      .getElementById("scrollTopBtn")
+      .addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+  </script>
 </html>
